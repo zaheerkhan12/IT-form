@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form onsubmit="signup(event)">
+                <label>Sign up</label><br><br>
+                <input type="email" id="email" placeholder="enter your email" required><br><br>
+                <input type="password" class="password" id="password" placeholder="enter your password" required><br><br>
+                <button class="btn" type="submit">Sign up</button>
+            </form>
+        </div><br><br>
+        <div class="login">
+            <form onsubmit="login(event)">
+                <label for="chk">login</label><br><br>
+                <input type="email" name="email" id="login_email" placeholder="enter your email" required><br><br>
+                <input type="password" name="password" id="login_password" placeholder="enter your password" required><br><br>
+                <button type="submit" class="btn">login</button>
+                <button onclick="logout()" class="btn">logout</button>
+            </form>
+        </div>
+    </div><br><br><br><br><br><br><br><br>
+
+<div class="main-2">
+
+     <div class="center">
+        <h2>Your Account Details</h2>
+        <img src="coding.PNG" 
+        height="auto" id="propic" width="25%"  alt="no-img">
+         <input type="file" accept="image/*" onchange="uploadimg(event)">
+        <div class="userdetails"></div>
+    </div>
+<div class="main-3">
+    <div class="model">
+      <div id="model">
+     <label for="chk">user details</label>
+        <form action="" id="editsprofile" onsubmit="userupdate(event)">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="profileEmail" placeholder="Email" required>
+            <input type="number" name="phone" placeholder="Phone" required>
+            <input type="text" name="specialty" placeholder="Specialty">
+            <input type="text" name="portfolioUrl" placeholder="Portfolio URL">
+            <input type="text" name="experience" placeholder="Experience">
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</div> 
+</div>
+</div>
+  
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+ <SCRipt>
+     const firebaseConfig = {
+            apiKey: "AIzaSyAwejk4eISvgttQpezy8jr-OHBwByiDM_w",
+            authDomain: "user-49ab0.firebaseapp.com",
+            projectId: "user-49ab0",
+            storageBucket: "user-49ab0.appspot.com",
+            messagingSenderId: "664922118029",
+            appId: "1:664922118029:web:64a73d9c64645fce7b8fc4",
+            measurementId: "G-LPLXKR2649"
+        };
+
+  firebase.initializeApp(firebaseConfig);
+ </SCRipt>
+ <script src="app.js"></script>  
+  <script src="./store/store.js"></script>
+
+</head>
+</body>

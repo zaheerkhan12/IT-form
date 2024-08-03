@@ -1,0 +1,39 @@
+ body{
+   margin: 0;
+   padding: 0;
+   display: flex;
+   /* justify-content: center;
+   align-items:center ; */
+   min-height: 100vh;
+   font-family: 'jost' sans-serif;
+   /* background: linear-gradient(to bottom , #0f0c29 , #302b63 , #24243e); */
+}
+.signup{
+   border: 7px solid blue;
+   border-radius: 4px;
+  width: 280px;
+  box-shadow: 20px 40px 60px 80px solid blue;
+}
+.signup input{
+   width: 270px;
+   height: 40px;
+}
+.signup form{
+   text-align: center;
+   color: blue;
+
+}
+.login{
+   border: 7px solid blue;
+   border-radius: 4px;
+  width: 280px;
+}
+.login input{
+   width: 270px;
+   height: 40px;
+}
+.login form{
+   text-align: center;
+   color: blue;
+   
+}
